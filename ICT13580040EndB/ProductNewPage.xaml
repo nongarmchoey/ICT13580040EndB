@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ICT13580040EndB.ProductNewPage">
+    <Grid>
+        <Image />
+
+        <ScrollView>
+
+            <Frame
+                Margin="30,30,30,30"
+                BackgroundColor="#F0FFFFFF"
+                CornerRadius="10"
+                VerticalOptions="Start">
+
+                <StackLayout Orientation="Vertical">
+
+                    <Label
+                        x:Name="titleLabel"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        HorizontalOptions="Center"
+                        Text="ซื้อรถยนต์"/>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="ประเภทรถ"
+                        TextColor="Green"/>
+                    
+                    <Picker
+                        x:Name="typePicker"
+                        Title="ประเภทรถ"
+                        BackgroundColor="#B0ffffff"/>
+
+                    <Label
+                        FontSize="14"
+                        Text="ยี่ห้อ"
+                        TextColor="Green"/>
+                    
+                    <Picker
+                        x:Name="brandPicker"
+                        Title="ยี่ห้อ"
+                        BackgroundColor="#B0ffffff"/>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="รุ่น"
+                        TextColor="Green"/>
+                    
+                    <Entry
+                        x:Name="generatoinEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Placeholder="รุ่น"/>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="ปี"
+                        TextColor="Green"/>
+                    
+                    <Entry
+                        x:Name="dateEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Placeholder="ปี"/>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="เลขไมล์ (กม.)"
+                        TextColor="Green"/>
+                    
+                    <Slider
+                        x:Name="mileSlider"
+                        Maximum="999999"
+                        Minimum="000000"
+                        Value="500000"
+                        BackgroundColor="#B0FFFFFF"/>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="สี"
+                        TextColor="Green"/>
+                    
+                    <Picker
+                        x:Name="colorPicker"
+                        Title="สี"
+                        BackgroundColor="#B0FFFFFF"/>
+                    
+                  <StackLayout Orientation="Horizontal">
+                        
+                        <Label
+                            FontSize="14"
+                            Text="รถดีเลอร์?"
+                            TextColor="Green"/>
+
+                        <Switch
+                            x:Name="delerSwitch"/>
+                        
+                    </StackLayout>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="รายละเอียด"
+                        TextColor="Green"/>
+                    
+                    <Editor
+                        x:Name="detailEditor"
+                        BackgroundColor="#B0FFFFFF"
+                        HeightRequest="100" />
+
+                    <Label
+                        FontSize="14"
+                        Text="ราคา"
+                        TextColor="Green"/>
+                    
+                    <Entry
+                        x:Name="priceEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Keyboard="Numeric"
+                        Placeholder="ราคา"/>
+                    
+                    <Label
+                        FontSize="14"
+                        Text="จังหวัด"
+                        TextColor="Green"/>
+                    
+                    <Picker
+                        x:Name="countryPicker"
+                        Title="จังหวัด"
+                        BackgroundColor="#B0FFFFFF"/>
+
+                    
+                    <Label
+                        FontSize="14"
+                        Text="เบอร์โทร"
+                        TextColor="Green"/>
+                    
+                    <Entry
+                        x:Name="phoneEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Keyboard="Telephone"
+                        Placeholder="เบอร์โทร"/>
+                    
+
+                    <Grid Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button
+                            x:Name="cancelButton"
+                            BackgroundColor="Red"
+                            Text="ยกเลิก"
+                            TextColor="White" />
+                        <Button
+                            x:Name="saveButton"
+                            Grid.Column="1"
+                            BackgroundColor="Green"
+                            Text="บันทึก"
+                            TextColor="White" />
+
+                    </Grid>
+
+
+
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>
